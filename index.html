@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/sneaker.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Reebok</title>
+</head>
+<body>
+
+    <div class="ellipse-1"></div>
+    <div class="ellipse-2"></div>
+    <div class="ellipse-3"></div>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <img class="logo" src="img/logo.svg" alt="logo">
+                <ul class="nav__menu">
+                    <li class="menu__link"><a href="#">Men</a></li>
+                    <li class="menu__link"><a href="#">Women</a></li>
+                    <li class="menu__link"><a href="#">Kids</a></li>
+                    <li class="menu__link"><a href="#">Favorites</a></li>
+                    <li class="menu__link"><a href="#">Customize</a></li>
+                    <li class="menu__search"><img class="search__icon" src="img/search.svg" alt="Search"><input type="text" placeholder="Search"></li>
+                    <li class="menu__btn"><img class="shopping-bag" src="/img/shopping.svg"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+
+    <section>
+        <div class="container-2">
+            <div class="blocks">
+                <div class="block-1">
+                    <img class="text-bg" src="img/text.svg" alt="text">
+                    <img class="sneakers" src="img/sneaker.png" alt="sneakers">
+                </div>
+                <div class="block-2">
+                    <div class="main__info">
+                        <h1 class="main__title">Reebok</h1>
+                        <h2 class="main__description">NBA Sneakers</h2>
+                        <p class="sub__description">Shaquille O'Neal Autographed Reebok Size 22 Shoe</p>
+                    </div>
+
+                    <div class="main__price">$ 1367.99</div>
+
+                    <div class="sub__info">
+                        This sneaker has been personally hand-signed by Shaquille O'Neal.
+                        It is officially licensed by the National Basketball Association and 
+                        comes with an individually numbered, tamper-evident hologram 
+                        from Fanatics Authentic. To ensure authenticity, the hologram can 
+                        be reviewed online.   
+                    </div>
+
+                    <div class="buttons">
+                        <button class="main button">BUY NOW</button>
+                        <button class="sub button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let layer = document.querySelector('.sneakers');
+        document.addEventListener('mousemove', (event) => {
+                layer.style.transform = 'translate3d(' + ((event.clientX * 0.1) / 6) + 'px,' + ((event.clientY * 0.1) / 6) + 'px,0px)';
+        });
+        });
+    </script>
+
+</body>
+</html>

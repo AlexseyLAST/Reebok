@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*,*::before, *:after{   /* ОБНУЛЕНИЯ */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    overflow: hidden;
+    font-family: 'Inter';
+    font-style: normal;
+    background: #1E1E35;
+}
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container-2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ellipse-1{
+    position: absolute;
+    width: 569px;
+    height: 569px;
+    left: -300px;
+    top: -250px;
+    background: #00A3FF;
+    filter: blur(315px);
+}
+
+.ellipse-2{
+    position: absolute;
+    width: 478px;
+    height: 478px;
+    left: 1450px;
+    top: -150px;
+    background: #00A3FF;
+    filter: blur(458px);
+}
+
+.ellipse-3{
+    position: absolute;
+    width: 569px;
+    height: 569px;
+    left: 1350px;
+    top: 700px;
+    background: #00A3FF;
+    filter: blur(315px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    z-index: 50;
+    width: 158px;
+    height: 80px;
+    margin-top: 58px;
+    margin-left: 67px;
+}
+
+.nav__menu{
+    display: flex;
+    width: 989px;
+    height: 47px;
+    margin-top: 73px;
+    margin-right: 88px;
+    list-style: none;
+
+}
+
+.menu__link{
+    margin-left: 58px;
+}
+
+.menu__link a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu__link a:hover{
+    color: #B5E4FF;
+}
+
+.search__icon{
+    z-index: 40;
+    position: relative;
+    max-width: 24px;
+    top: 38px;
+    left: 30px;
+}
+
+.menu__search{
+    margin-left: 57px;
+    margin-top: -34px
+}
+
+.menu__search input{
+    width: 202px;
+    height: 47px;
+    border-radius: 85px;
+    backdrop-filter: blur(500px); 
+    background: rgba(0, 163, 255, 0.25);
+}
+
+.menu__search input::placeholder{
+    z-index: 70;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.menu__search input[type="text"]{
+    z-index: 70;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.shopping-bag{
+    max-width: 34px;
+    margin-top: -8px;
+    margin-left: 57px;
+}
+
+.block-1{
+    margin-top: 40px;
+    margin-left: 68px;
+    width: 680px;
+    height: 690px;
+    background: #00A3FF;
+    border-radius: 55px;
+}
+
+.text-bg{
+   margin-top: 10px;
+}
+
+.sneakers{
+    z-index: 60;
+    position: absolute;
+    max-width: 620px;
+    left: 250px;
+    top: 250px;
+}
+
+.block-2{
+    position: absolute;
+    width: 650px;
+    height: 580px;
+    left: 750px;
+    top: 235px;
+    background: rgba(30, 30, 53, 0.1);
+    backdrop-filter: blur(531px);
+    border-radius: 55px;
+}
+
+.main__info{
+    text-align: center;
+}
+
+.main__title{
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 155px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main__description{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #B5E4FF;
+}
+
+.sub__description{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.main__price{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DAF2FF;
+}
+
+.sub__info{
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 450px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.button{
+    margin-left: 20px;
+    width: 193.43px;
+    height: 49.45px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.main{
+    background: #00A3FF;
+    border: 4px solid #73CDFF;
+    box-shadow: 0px 5px 8px rgba(0, 163, 255, 0.4);
+}
+
+.sub{
+    background: #FF5368;
+    border: 4px solid #FF9FAB;
+    box-shadow: 0px 5px 8px rgba(255, 83, 104, 0.4);
+}
+
+.main:hover{
+    border: 2px solid #73CDFF;
+}
+
+.sub:hover{
+    border: 2px solid #FF9FAB;
+}
